@@ -7,23 +7,85 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets\style.css">
-    <script type="text/javascript" src="assets/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets\style.css">
+    
     <title>FireBase App</title>
 </head>
 
 <body>
-<div class='jumbotron bg-dark text-white text-center'>
-    <h1>Employee Data Management</h1>
-    <h2>A Comprehensive Directory of Employee Billable Hours</h2>
-</div>
-<div class='container'>
-    <div class="card">
-        <div class="card-body">
-
-        </div>
+    <div class='jumbotron bg-dark text-white text-center'>
+        <h1>Employee Data Management</h1>
+        <h2>A Comprehensive Directory of Employee Billable Hours</h2>
     </div>
-</div>
+    <div class='container'>
+        <div class="card">
+            <div class="card-body">
+                <table class='table' style="width:100%">
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Role</th>
+                        <th>Start Date</th>
+                        <th>Months Worked</th>
+                        <th>Monthly Rate ($)</th>
+                        <th>Total Billed ($)</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+
+                <form>
+                    <div class="form-group">
+                        <label for="emplyeeName">Employee Name</label>
+                        <input type="Employee Name" class="form-control" id="name" aria-describedby="employeehelp"
+                            placeholder=" Employee Name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="the company role">Role</label>
+                        <input type="role" class="form-control" id="role" placeholder="Company Role">
+                    </div>
+
+                </form>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"> Start Date (MM/DD/YYYY)</label>
+                        <input type="date" class="form-control" id="date" aria-describedby="start date"
+                            placeholder="10/15/19 ">
+
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Monthy Rate</label>
+                        <input type="rate" class="form-control" id="rate" placeholder="Monthly Rate">
+                    </div>
+                    <div class="form-group form-check">
+                        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+   <!-- Link to firebase -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/7.2.0/firebase-app.js"></script>
+
+<!-- Firebase Core JavaScript Link -->
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+<!-- Specific Firebase products we want -->
+<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script type="text/javascript" src="assets/app.js"></script>  
+    <script type="text/javascript" src="assets/moment.js"></script>  
+
 </body>
 
 </html>

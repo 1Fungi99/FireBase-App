@@ -1,0 +1,49 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+#card-body {
+    border-color: black;
+
+    background-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#form-group {
+
+    border-color: black;
+    border-width: 10px;
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    background-color: lightblue;
+    border-width: 10px;
+    border-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#container {
+    border-color: black;
+    border-width: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#card {
+    border-color: black;
+    border-width: 10px;
+    background-color: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
